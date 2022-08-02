@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@700&display=swap');
+body{height:100%;width:100%;}
+
+main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    color: white;
+}
+/* changing style of "play" button */
+h1 {
+    padding-bottom: 10vh;
+    text-shadow: 
+    1px 0px 1px #ccc, 0px 1px 1px #eee, 
+    2px 1px 1px #ccc, 1px 2px 1px #eee,
+    3px 2px 1px #ccc, 2px 3px 1px #eee,
+    4px 3px 1px #ccc, 3px 4px 1px #eee,
+    5px 4px 1px #ccc, 4px 5px 1px #eee,
+    6px 5px 1px #ccc, 5px 6px 1px #eee,
+    7px 6px 1px #ccc;
+    font-size: 15vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Grow and change colour transition */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { 
+    transform: scale(1.1); 
+    color: #FF6700;
+}
+
+/* Setting up canvas */
+#random {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

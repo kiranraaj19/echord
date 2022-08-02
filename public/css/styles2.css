@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@700&display=swap');
+:root {
+    --div_radius: 100px;
+}
+
+main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    color: white;
+}
+
+
+div.current_chord {
+    background-color: white;
+    color: #FF6700;
+    height: calc(2* var(--div_radius));
+    width: calc(2* var(--div_radius));
+    border-radius: var(--div_radius);
+    box-shadow: 5px -5px  rgba(0,0,0,0.1);
+    transition: all .2s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
+}
+
+div.current_chord:hover {
+    transform: scale(1.1);
+    background-color: #FF6700;
+    color: white;
+}
+
+#output {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#transcription {
+    position: absolute;
+    left: 50%;
+    top: 0%;   
+    width: 40vw;
+    height: 10vh;
+    transform: translate(-50%,0%);
+    color: #FF6700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3vh;
+}
